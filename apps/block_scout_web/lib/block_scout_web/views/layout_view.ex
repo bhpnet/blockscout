@@ -7,42 +7,29 @@ defmodule BlockScoutWeb.LayoutView do
 
   import BlockScoutWeb.AddressView, only: [from_address_hash: 1]
 
-  @issue_url "https://github.com/poanetwork/blockscout/issues/new"
+  @issue_url "https://github.com/bhpnet/blockscout/issues/new"
   @default_other_networks [
     %{
-      title: "POA",
-      url: "https://blockscout.com/poa/core"
+      title: "BHP Mainnet",
+      url: "https://scan.bhpnet.io/",
+      test_net?: false
     },
     %{
-      title: "Sokol",
-      url: "https://blockscout.com/poa/sokol",
+      title: "BHP Testnet",
+      url: "https://testnet.bhpnet.io/",
       test_net?: true
-    },
-    %{
-      title: "xDai",
-      url: "https://blockscout.com/poa/xdai"
-    },
-    %{
-      title: "Ethereum Classic",
-      url: "https://blockscout.com/etc/mainnet",
-      other?: true
-    },
-    %{
-      title: "RSK",
-      url: "https://blockscout.com/rsk/mainnet",
-      other?: true
     }
   ]
 
   alias BlockScoutWeb.{CustomContractsHelpers, SocialMedia}
 
   def logo do
-    Keyword.get(application_config(), :logo) || "/images/blockscout_logo.svg"
+    Keyword.get(application_config(), :logo) || "/images/bhp_logo.svg"
   end
 
   def logo_footer do
     Keyword.get(application_config(), :logo_footer) || Keyword.get(application_config(), :logo) ||
-      "/images/blockscout_logo.svg"
+      "/images/bhp_logo.svg"
   end
 
   def logo_text do
@@ -50,11 +37,11 @@ defmodule BlockScoutWeb.LayoutView do
   end
 
   def subnetwork_title do
-    Keyword.get(application_config(), :subnetwork) || "Sokol"
+    Keyword.get(application_config(), :subnetwork) || "Testnet"
   end
 
   def network_title do
-    Keyword.get(application_config(), :network) || "POA"
+    Keyword.get(application_config(), :network) || "BHP"
   end
 
   defp application_config do
@@ -120,7 +107,7 @@ defmodule BlockScoutWeb.LayoutView do
           nil
 
         release_link_env_var == "" || release_link_env_var == nil ->
-          "https://github.com/poanetwork/blockscout/releases/tag/" <> version
+          "https://github.com/bhpnet/blockscout/releases/tag/" <> version
 
         true ->
           release_link_env_var
