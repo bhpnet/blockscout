@@ -66,7 +66,7 @@ to: address_contract_path(@conn, :index, metadata_for_verification.address_hash)
 
           <%= if payable?(function) do %>
             <div class="form-group pr-2">
-              <input type="text" name="function_input" tx-value class="form-control form-control-sm address-input-sm mt-2" placeholder='value(<%= gettext("ETH")%>)'  />
+              <input type="text" name="function_input" tx-value class="form-control form-control-sm address-input-sm mt-2" placeholder='value(<%= gettext("BHP")%>)'  />
             </div>
           <% end %>
 
