@@ -1,6 +1,21 @@
 ## Current
 
 ### Features
+- [#3541](https://github.com/poanetwork/blockscout/pull/3541) - Staking dapp stats: total number of delegators, total staked amount 
+- [#3540](https://github.com/poanetwork/blockscout/pull/3540) - Apply DarkForest custom theme to NFT instances
+
+### Fixes
+
+### Chore
+- [#3540](https://github.com/poanetwork/blockscout/pull/3540), [#3545](https://github.com/poanetwork/blockscout/pull/3545) - Support different versions of DarkForest (0.4 - 0.5)
+
+
+## 3.5.0-beta
+
+### Features
+- [#3536](https://github.com/poanetwork/blockscout/pull/3536) - Revert reason in the result of contract's method call
+- [#3532](https://github.com/poanetwork/blockscout/pull/3532) - Contract interaction: an easy setting of precision for integer input
+- [#3531](https://github.com/poanetwork/blockscout/pull/3531) - Allow double quotes in input data of contract methods
 - [#3515](https://github.com/poanetwork/blockscout/pull/3515) - CRC total balance
 - [#3513](https://github.com/poanetwork/blockscout/pull/3513) - Allow square brackets for an array input data in contracts interaction
 - [#3480](https://github.com/poanetwork/blockscout/pull/3480) - Add support of Autonity client
@@ -8,11 +23,15 @@
 - [#3462](https://github.com/poanetwork/blockscout/pull/3462) - Display price for bridged tokens
 
 ### Fixes
+- [#3535](https://github.com/poanetwork/blockscout/pull/3535) - Improve speed of tokens dropdown loading at owner address page
+- [#3530](https://github.com/poanetwork/blockscout/pull/3530) - Allow trailing/leading whitespaces for inputs for contract read methods
+- [#3526](https://github.com/poanetwork/blockscout/pull/3526) - Order staking pools
+- [#3525](https://github.com/poanetwork/blockscout/pull/3525), [#3533](https://github.com/poanetwork/blockscout/pull/3533) - Address token balance on demand fetcher
 - [#3514](https://github.com/poanetwork/blockscout/pull/3514) - Read contract: fix internal server error
 - [#3513](https://github.com/poanetwork/blockscout/pull/3513) - Fix input data processing for method call (array type of data)
 - [#3509](https://github.com/poanetwork/blockscout/pull/3509) - Fix QR code tooltip appearance in mobile view
 - [#3507](https://github.com/poanetwork/blockscout/pull/3507), [#3510](https://github.com/poanetwork/blockscout/pull/3510) - Fix left margin of balance card in mobile view
-- [#3506](https://github.com/poanetwork/blockscout/pull/3506) - Fix token trasfer's tile styles: prevent overlapping of long names
+- [#3506](https://github.com/poanetwork/blockscout/pull/3506) - Fix token transfer's tile styles: prevent overlapping of long names
 - [#3505](https://github.com/poanetwork/blockscout/pull/3505) - Fix Staking DApp first loading
 - [#3433](https://github.com/poanetwork/blockscout/pull/3433) - Token balances and rewards tables deadlocks elimination
 - [#3494](https://github.com/poanetwork/blockscout/pull/3494), [#3497](https://github.com/poanetwork/blockscout/pull/3497), [#3504](https://github.com/poanetwork/blockscout/pull/3504), [#3517](https://github.com/poanetwork/blockscout/pull/3517) - Contracts interaction: fix method call with array[] inputs
