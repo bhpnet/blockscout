@@ -30,37 +30,35 @@
           </a>
         </div>
       </div>
-
-      <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-        <h3>BHP Network</h3>
-        <ul>
-          <li><a href="https://github.com/bhpnet/blockscout" rel="noreferrer" class="footer-link"><%= gettext("Contribute") %></a></li>
-          <li><a href="https://discord.com/invite/V2m6DRv" rel="noreferrer" class="footer-link"><%= gettext("Chat") %></a></li>
-          <li><a href="https://bhpfans.org" rel="noreferrer" class="footer-link"><%= gettext("Support") %></a></li>
-        </ul>
-      </div>
       <% main_nets = main_nets(other_networks()) %>
 
       <%= unless Enum.empty?(main_nets) do %>
-        <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-          <h3><%= gettext("Main Networks") %></h3>
-          <ul>
-            <%= for %{title: title, url: url} <- main_nets do %>
-              <li><a href="<%= url%>" rel="norefferer" class="footer-link"> <%= title %> </a></li>
-            <% end %>
-          </ul>
-        </div>
+      <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://bhpnet.io/" rel="noreferrer" class="footer-link">BHP Website</a></li>
+          <li><a href="https://bhpfans.org" rel="noreferrer" class="footer-link">BHP Fans</a></li>
+          <li><a href="https://docs.bhpnet.io/" rel="noreferrer" class="footer-link">Developer Doc </a></li>
+        </ul>
+      </div>
       <% end %>
+
+      <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+        <h3>Tools</h3>
+        <ul>
+          <li><a href="https://www.bhpnet.io/" rel="noreferrer" class="footer-link">BHP Wallet</a></li>
+          <li><a href="https://faucet.bhpnet.io/" rel="noreferrer" class="footer-link">BHP Faucet</a></li>
+        </ul>
+      </div>
 
       <% test_nets = test_nets(other_networks()) %>
 
       <%= unless Enum.empty?(test_nets) do %>
         <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-          <h3><%= gettext("Test Networks") %></h3>
+          <h3>Networks</h3>
           <ul>
-            <%= for %{title: title, url: url} <- test_nets do %>
-              <li><a href="<%= url%>" rel="noreferrer" class="footer-link"> <%= title %> </a></li>
-            <% end %>
+            <li><a href="https://scan.bhpnet.io/" rel="noreferrer" class="footer-link">BHP Mainnet</a></li>
+            <li><a href="https://testnet.bhpnet.io/" rel="noreferrer" class="footer-link">BHP Testnet</a></li>
           </ul>
         </div>
       <% end %>
