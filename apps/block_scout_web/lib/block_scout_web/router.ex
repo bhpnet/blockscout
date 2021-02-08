@@ -1,7 +1,7 @@
 defmodule BlockScoutWeb.Router do
   use BlockScoutWeb, :router
 
-  alias BlockScoutWeb.Plug.GraphQL
+#  alias BlockScoutWeb.Plug.GraphQL
   alias BlockScoutWeb.{ApiRouter, WebRouter}
 
   if Application.get_env(:block_scout_web, ApiRouter)[:wobserver_enabled] do
@@ -38,27 +38,27 @@ defmodule BlockScoutWeb.Router do
       max_complexity: @max_complexity
     )
 
-    forward("/graphiql", Absinthe.Plug.GraphiQL,
-      schema: BlockScoutWeb.Schema,
-      interface: :advanced,
-      default_query: GraphQL.default_query(),
-      socket: BlockScoutWeb.UserSocket,
-      analyze_complexity: true,
-      max_complexity: @max_complexity
-    )
+#    forward("/graphiql", Absinthe.Plug.GraphiQL,
+#      schema: BlockScoutWeb.Schema,
+#      interface: :advanced,
+#      default_query: GraphQL.default_query(),
+#      socket: BlockScoutWeb.UserSocket,
+#      analyze_complexity: true,
+#      max_complexity: @max_complexity
+#    )
   else
     scope "/", BlockScoutWeb do
       pipe_through(:browser)
-      get("/api-docs", PageNotFoundController, :index)
-      get("/eth-rpc-api-docs", PageNotFoundController, :index)
+#      get("/api-docs", PageNotFoundController, :index)
+#      get("/eth-rpc-api-docs", PageNotFoundController, :index)
     end
   end
 
   scope "/", BlockScoutWeb do
     pipe_through(:browser)
 
-    get("/api-docs", APIDocsController, :index)
-    get("/eth-rpc-api-docs", APIDocsController, :eth_rpc)
+#    get("/api-docs", APIDocsController, :index)
+#    get("/eth-rpc-api-docs", APIDocsController, :eth_rpc)
   end
 
   url_params = Application.get_env(:block_scout_web, BlockScoutWeb.Endpoint)[:url]
