@@ -15,7 +15,7 @@
         <span class="logo-text"> <%= logo_text() %> </span>
       <% end %>
       <%= if !(logo_test()== ""||logo_test()== nil) do %>
-        <sup class="small"><span class="badge badge-danger badge-pill">Testnet</span></sup>
+        <sup class="small"><span class="badge"><span class="badge-danger badge-pill">Testnet</span></span></sup>
       <% end %>
     <% end %>   
     <script>
