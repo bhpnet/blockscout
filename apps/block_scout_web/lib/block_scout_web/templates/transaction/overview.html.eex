@@ -108,10 +108,6 @@
             <dt class="col-sm-3 text-muted"> <%= gettext "TX Fee" %> </dt>
             <dd class="col-sm-9">
               <%= formatted_fee(@transaction, denomination: :ether) %>
-
-              <%= if !empty_exchange_rate?(@exchange_rate) do %>
-                (<span data-wei-value=<%= fee(@transaction) %> data-usd-exchange-rate=<%= @exchange_rate.usd_value %>></span>)
-              <% end %>
             </dd>
           </dl>
           <!-- Processing Time -->
@@ -207,12 +203,6 @@
                 <h3 class="address-balance-text">
                   <%= value(@transaction) %>
                 </h3>
-                <%= if !empty_exchange_rate?(@exchange_rate) do %>
-                  <p class="address-current-balance"
-                    data-wei-value=<%= @transaction.value.value %>
-                    data-usd-exchange-rate=<%= @exchange_rate.usd_value %>>
-                  </p>
-                <% end %>
               </div>
             <% end %>
             <% token_transfers = aggregate_token_transfers(transaction_with_transfers.token_transfers) %>

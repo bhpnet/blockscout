@@ -22,6 +22,7 @@ config :block_scout_web, BlockScoutWeb.Chain,
   logo: System.get_env("LOGO"),
   logo_footer: System.get_env("LOGO_FOOTER"),
   logo_text: System.get_env("LOGO_TEXT"),
+  logo_test: System.get_env("LOGO_TEST"),
   has_emission_funds: false,
   staking_enabled: not is_nil(System.get_env("POS_STAKING_CONTRACT")),
   # how often (in blocks) the list of pools should autorefresh in UI (zero turns off autorefreshing)

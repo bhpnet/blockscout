@@ -14,6 +14,9 @@
       <%= if logo_text() do %>
         <span class="logo-text"> <%= logo_text() %> </span>
       <% end %>
+      <%= if !(logo_test()== ""||logo_test()== nil) do %>
+        <sup class="small"><span class="badge badge-danger badge-pill">Testnet</span></sup>
+      <% end %>
     <% end %>   
     <script>
       if (localStorage.getItem("current-color-mode") === "dark") {
