@@ -13,20 +13,18 @@ $('.dark-mode-changer').click(function () {
 
 $('.language-en-mode-changer').click(function () {
   if (localStorage.getItem('locale') !== 'en') {
-
+    localStorage.setItem('locale', 'en')
+    document.cookie="locale=en";
+    // reload each theme switch
+    document.location.reload(true)
   }
-  localStorage.setItem('locale', 'en')
-  document.cookie="locale=en";
-  // reload each theme switch
-  document.location.reload(true)
 })
 
 $('.language-zh-mode-changer').click(function () {
   if (localStorage.getItem('locale') !== 'zh') {
-
-  }
     localStorage.setItem('locale', 'zh')
     document.cookie="locale=zh";
     // reload each theme switch
     document.location.reload(true)
+  }
 })
