@@ -379,7 +379,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:170
 msgid "Contract Libraries"
-msgstr ""
+msgstr "合约库"
 
 #, elixir-format
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:38
@@ -427,7 +427,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/address_decompiled_contract/index.html.eex:17
 msgid "Copy Decompiled Contract Code"
-msgstr ""
+msgstr "复制未编译的合约代码"
 
 #, elixir-format
 #: lib/block_scout_web/templates/address_contract/index.html.eex:63
@@ -880,6 +880,14 @@ msgstr "代币详情"
 #: lib/block_scout_web/views/tokens/overview_view.ex:41
 msgid "Token Holders"
 msgstr "代币持有人"
+
+#: lib/block_scout_web/templates/tokens/holder/index.html.eex:40
+msgid "Holders Count"
+msgstr "持有人数量"
+
+#: lib/block_scout_web/templates/address/index.html.eex:39
+msgid "Txn Count"
+msgstr "交易数量"
 
 #, elixir-format
 #: lib/block_scout_web/templates/tokens/inventory/_token.html.eex:11
