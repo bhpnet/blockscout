@@ -6,14 +6,14 @@ msgstr "语言"
 msgid "%{count} token"
 msgid_plural "%{count} tokens"
 msgstr[0] "%{count} 代币"
-msgstr[1] ""
+msgstr[1] "%{count} 个代币"
 
 #, elixir-format
 #: lib/block_scout_web/templates/block/_tile.html.eex:27
 msgid "%{count} transaction"
 msgid_plural "%{count} transactions"
 msgstr[0] "%{count} 交易"
-msgstr[1] ""
+msgstr[1] "%{count} 笔交易"
 
 #, elixir-format
 #: lib/block_scout_web/templates/transaction/overview.html.eex:220
@@ -691,7 +691,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/address/_balance_card.html.eex:32
 msgid "Fetching tokens..."
-msgstr ""
+msgstr "加载代币中。。。"
 
 #, elixir-format
 #: lib/block_scout_web/templates/admin/dashboard/index.html.eex:16
@@ -1091,7 +1091,7 @@ msgstr "名称"
 #, elixir-format
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:18
 msgid "New Smart Contract Verification"
-msgstr ""
+msgstr "新的智能合约验证"
 
 #, elixir-format
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:55
@@ -1099,7 +1099,7 @@ msgstr ""
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:141
 #: lib/block_scout_web/templates/stakes/_rows.html.eex:24
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #, elixir-format
 #: lib/block_scout_web/templates/internal_transaction/_tile.html.eex:36
@@ -1116,7 +1116,7 @@ msgstr "是否优化"
 #: lib/block_scout_web/templates/address_contract/index.html.eex:37
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:114
 msgid "Optimization runs"
-msgstr ""
+msgstr "优化运行"
 
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_footer.html.eex:71
@@ -1662,7 +1662,7 @@ msgstr ""
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:146
 #: lib/block_scout_web/templates/stakes/_rows.html.eex:24
 msgid "Yes"
-msgstr ""
+msgstr "是"
 
 #, elixir-format
 #: lib/block_scout_web/templates/address/overview.html.eex:126
