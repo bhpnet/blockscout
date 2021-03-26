@@ -37,7 +37,7 @@ defmodule BlockScoutWeb.LayoutView do
   end
 
   def logo_test do
-    Keyword.get(application_config(), :logo_test) || false
+    Keyword.get(application_config(), :logo_test) || nil
   end
 
   def subnetwork_title do
