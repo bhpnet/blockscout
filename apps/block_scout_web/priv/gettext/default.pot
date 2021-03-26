@@ -881,6 +881,14 @@ msgstr ""
 msgid "Token Holders"
 msgstr ""
 
+#: lib/block_scout_web/templates/tokens/holder/index.html.eex:40
+msgid "Holders Count"
+msgstr ""
+
+#: lib/block_scout_web/templates/address/index.html.eex:39
+msgid "Txn Count"
+msgstr ""
+
 #, elixir-format
 #: lib/block_scout_web/templates/tokens/inventory/_token.html.eex:11
 msgid "Token ID"

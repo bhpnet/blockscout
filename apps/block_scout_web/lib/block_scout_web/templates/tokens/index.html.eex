@@ -16,10 +16,14 @@
 			<div class="stakes-table-th-content">&nbsp;</div>
 	      </th>
 	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">Token</div>
+			<div class="stakes-table-th-content">
+				<%= gettext "Tokens" %>
+			</div>
 	      </th>
 	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">Address</div>
+			<div class="stakes-table-th-content">
+				<%= gettext "Address" %>
+			</div>
 	      </th>
 		  <%= if bridged_tokens_enabled?() do %>
 			<th class="stakes-table-th">
@@ -28,12 +32,12 @@
 		  <% end %>
 	      <th class="stakes-table-th">
 			<div class="stakes-table-th-content">
-			Total Supply
+				<%= gettext "Total Supply" %>
 			</div>
 	      </th>
 	      <th class="stakes-table-th">
 			<div class="stakes-table-th-content">
-			Holders Count
+				<%= gettext "Holders Count" %>
 			</div>
 	      </th>
 	    </tr>
