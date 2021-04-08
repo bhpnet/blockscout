@@ -1501,7 +1501,7 @@ msgstr "交易速度"
 #, elixir-format
 #: lib/block_scout_web/templates/address/_tile.html.eex:31
 msgid "Transactions sent"
-msgstr ""
+msgstr "交易已发送"
 
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:40
@@ -1549,7 +1549,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/transaction/overview.html.eex:280
 msgid "Used"
-msgstr ""
+msgstr "已使用"
 
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_topnav.html.eex:57
@@ -1600,7 +1600,7 @@ msgstr "验证并发布"
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:11
 #: lib/block_scout_web/templates/transaction_log/_logs.html.eex:9
 msgid "Verify the contract "
-msgstr ""
+msgstr "验证合约"
 
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_footer.html.eex:86
@@ -1647,7 +1647,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/transaction/_metatags.html.eex:10
 msgid "View transaction %{transaction} on %{subnetwork}"
-msgstr ""
+msgstr "查看交易 %{transaction} 在 %{subnetwork}"
 
 #, elixir-format
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:119
@@ -1680,12 +1680,12 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/eth_rpc.html.eex:12
 msgid "custom RPC"
-msgstr ""
+msgstr "自定义 RPC"
 
 #, elixir-format
 #: lib/block_scout_web/views/address_contract_view.ex:24
 msgid "false"
-msgstr ""
+msgstr "否"
 
 #, elixir-format
 #: lib/block_scout_web/templates/address_logs/_logs.html.eex:9
@@ -1727,7 +1727,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/views/address_contract_view.ex:23
 msgid "true"
-msgstr ""
+msgstr "是"
 
 #, elixir-format
 #: lib/block_scout_web/templates/address/_validator_metadata_modal.html.eex:37
@@ -1770,12 +1770,12 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/layout/app.html.eex:29
 msgid "Indexing Tokens"
-msgstr ""
+msgstr "初始化代币中"
 
 #, elixir-format
 #: lib/block_scout_web/templates/address_coin_balance/index.html.eex:24
 msgid "Loading chart"
-msgstr ""
+msgstr "加载图表中"
 
 #, elixir-format
 #: lib/block_scout_web/templates/transaction_log/_logs.html.eex:113
@@ -1787,12 +1787,12 @@ msgstr ""
 #: lib/block_scout_web/templates/tokens/instance/overview/_tabs.html.eex:10
 #: lib/block_scout_web/views/tokens/instance/overview_view.ex:120
 msgid "Metadata"
-msgstr ""
+msgstr "元数据"
 
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:58
 msgid "Module"
-msgstr ""
+msgstr "模块"
 
 #, elixir-format
 #: lib/block_scout_web/templates/chain/show.html.eex:134
@@ -2066,7 +2066,7 @@ msgstr ""
 #: lib/block_scout_web/templates/stakes/_stakes_modal_stake.html.eex:11
 #: lib/block_scout_web/templates/stakes/_stakes_modal_withdraw.html.eex:11
 msgid "Amount"
-msgstr ""
+msgstr "数量"
 
 #, elixir-format
 #:
